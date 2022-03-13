@@ -13,6 +13,8 @@
 		84242F7727D7F4F800F95EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84242F7527D7F4F800F95EDD /* Main.storyboard */; };
 		84242F7927D7F4FC00F95EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84242F7827D7F4FC00F95EDD /* Assets.xcassets */; };
 		84242F7C27D7F4FC00F95EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84242F7A27D7F4FC00F95EDD /* LaunchScreen.storyboard */; };
+		84242F8427D9297700F95EDD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84242F8327D9297700F95EDD /* WelcomeViewController.swift */; };
+		842746D527DE326F006BA19E /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842746D427DE326F006BA19E /* UserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		84242F7827D7F4FC00F95EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84242F7B27D7F4FC00F95EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84242F7D27D7F4FC00F95EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84242F8327D9297700F95EDD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		842746D427DE326F006BA19E /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		84242F6E27D7F4F800F95EDD /* LessonThreeApp */ = {
 			isa = PBXGroup;
 			children = (
-				84242F6F27D7F4F800F95EDD /* AppDelegate.swift */,
-				84242F7127D7F4F800F95EDD /* SceneDelegate.swift */,
-				84242F7327D7F4F800F95EDD /* LoginViewController.swift */,
-				84242F7527D7F4F800F95EDD /* Main.storyboard */,
-				84242F7827D7F4FC00F95EDD /* Assets.xcassets */,
-				84242F7A27D7F4FC00F95EDD /* LaunchScreen.storyboard */,
-				84242F7D27D7F4FC00F95EDD /* Info.plist */,
+				842746D727DE3F97006BA19E /* ViewControllers */,
+				842746DB27DE404E006BA19E /* Models */,
+				842746DA27DE4025006BA19E /* Storyboards */,
+				842746D927DE400E006BA19E /* Resources */,
+				842746D827DE3FEB006BA19E /* App */,
 			);
 			path = LessonThreeApp;
+			sourceTree = "<group>";
+		};
+		842746D727DE3F97006BA19E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84242F7327D7F4F800F95EDD /* LoginViewController.swift */,
+				84242F8327D9297700F95EDD /* WelcomeViewController.swift */,
+				842746D427DE326F006BA19E /* UserProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		842746D827DE3FEB006BA19E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84242F6F27D7F4F800F95EDD /* AppDelegate.swift */,
+				84242F7127D7F4F800F95EDD /* SceneDelegate.swift */,
+				84242F7D27D7F4FC00F95EDD /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		842746D927DE400E006BA19E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84242F7827D7F4FC00F95EDD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		842746DA27DE4025006BA19E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84242F7527D7F4F800F95EDD /* Main.storyboard */,
+				84242F7A27D7F4FC00F95EDD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		842746DB27DE404E006BA19E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84242F7427D7F4F800F95EDD /* LoginViewController.swift in Sources */,
+				842746D527DE326F006BA19E /* UserProfileViewController.swift in Sources */,
+				84242F8427D9297700F95EDD /* WelcomeViewController.swift in Sources */,
 				84242F7027D7F4F800F95EDD /* AppDelegate.swift in Sources */,
 				84242F7227D7F4F800F95EDD /* SceneDelegate.swift in Sources */,
 			);
